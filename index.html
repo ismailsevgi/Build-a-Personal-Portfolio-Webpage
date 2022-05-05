@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>My Page!</title>
+</head>
+<body>
+    <div class="topside">
+        <nav id="navbar">
+            <a href="#">About Me</a>
+            <a href="#">My Works</a>
+            <a href="https://github.com/ismailsevgi" id="profile-link" target="_blank">Contact</a>
+        </nav>
+        <hr>
+        <div class="boxDiv">
+            <div id="box"></div>
+            <section id="welcome-section">
+                <h1>My name is Ismail,</h1>
+                <h1>and welcome to my page!</h1>
+            </section>
+        </div>
+
+        <div id="button">
+            
+            <button id="downBtn"><i class="fa-solid fa-circle-arrow-down"></i></button>
+        </div>
+        
+            
+          
+        
+        
+    </div>
+    
+
+    
+     <section id="projects">
+    
+            <div class="project-tile" id="project1">
+                
+                <a href="https://github.com/ismailsevgi/bootstrapInstaClone"><img src="/images/proje2.jpg" alt=""></a>
+            </div>
+            <div class="project-tile" id="project2">
+                
+                <a href="https://github.com/ismailsevgi/todoListPatika"><img src="/images/proje1.jpg" alt=""></a>
+            </div>
+            <div class="project-tile" id="project3">
+                
+                <a href="https://github.com/ismailsevgi/cikolataKupleri"><img src="/images/proje4.jpg" alt=""></a>
+            </div>
+        </section>
+    
+    
+    
+
+    <script>
+        document.getElementById("downBtn").addEventListener('click', (e)=> {
+            e.preventDefault()
+            document.body.style.overflow = '';
+            document.getElementById("projects").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        })
+    </script>
+</body>
+</html>
